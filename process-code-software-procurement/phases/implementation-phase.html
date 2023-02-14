@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Integration, Process code for software procurement</title>
+  <title>Implementation phase, Process code for software procurement</title>
   <meta name="description" content="A process code for software procurement ">
 
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/process-code-software-procurement/assets/style.css">
 
   
-  <link rel="canonical" href="/phases/11-integration.html">
+  <link rel="canonical" href="/process-code-software-procurement/phases/implementation-phase.html">
   
 
   <link rel="icon" href="https://brand.publiccode.net/logo/mark-128w128h.png">
@@ -47,7 +47,7 @@
     <header>
   
     <section class="site-title ">
-      <a href="">Process code for software procurement</a>
+      <a href="/process-code-software-procurement">Process code for software procurement</a>
     </section>
   
 
@@ -80,24 +80,7 @@
     
       <h3 id="page-table-of-contents">Contents</h3>
       <ol class="table-of-contents">
-  <li><a href="#goals">Goals</a></li>
-  <li><a href="#actions">Actions</a>
-    <ol>
-      <li><a href="#using-a-devops-approach">Using a DevOps approach</a></li>
-      <li><a href="#creating-a-documentation-training-and-maintenance-plan">Creating a documentation, training and maintenance plan</a></li>
-    </ol>
-  </li>
-  <li><a href="#common-challenges">Common challenges</a>
-    <ol>
-      <li><a href="#staff-turnover">Staff turnover</a></li>
-      <li><a href="#lack-of-familiarity-with-andor-lack-of-involvement-in-the-agile-development-process">Lack of familiarity with and/or lack of involvement in the agile development process</a></li>
-      <li><a href="#lack-of-communication-with-end-users">Lack of communication with end users</a></li>
-      <li><a href="#lack-of-decision-making-power-granted-to-technical-experts">Lack of decision-making power granted to technical experts</a></li>
-      <li><a href="#lack-of-attention-and-resources-for-lifetime-ownership">Lack of attention and resources for lifetime ownership</a></li>
-    </ol>
-  </li>
-  <li><a href="#checklist">Checklist</a></li>
-  <li><a href="#references">References</a></li>
+  <li><a href="#read-on">Read on</a></li>
 </ol>
 
     
@@ -109,9 +92,9 @@
     <h3 id="page-edit-links">Contribute on GitHub</h3>
     <ul class="edit-links">
       <!-- The default branch is develop, while site.github.source.branch is gh-pages -->
-      <li><a href="https://github.com/publiccodenet/process-code-software-procurement/edit/develop/phases/11-integration.md"><svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <li><a href="https://github.com/publiccodenet/process-code-software-procurement/edit/develop/phases/implementation-phase.md"><svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
  Edit this page</a></li>
-      <li><a href="https://github.com/publiccodenet/process-code-software-procurement/issues/new?body=I'd like to report an issue in `phases/11-integration.md`"><svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+      <li><a href="https://github.com/publiccodenet/process-code-software-procurement/issues/new?body=I'd like to report an issue in `phases/implementation-phase.md`"><svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
  File an Issue</a></li>
     </ul>
   
@@ -125,11 +108,11 @@
     <!-- To-do: move the css to a class in a separate file -->
 <div>
   <ol style="display: flex; flex-wrap: wrap; justify-content: space-around; height: 100%; list-style-type:none ;">
-      <li style="display: block; height: 100%; padding:20px;"><a href="/index.html">Introduction</a></li>
-      <li style="display: block; height: 100%; padding:20px;  "><a href="/phases/orientation-phase.html" style="">Orientation</a></li>
-      <li style="display: block; height: 100%; padding:20px; "><a href="/phases/planning-phase.html">Planning</a></li>
-      <li style="display: block; height: 100%; padding:20px; "><a href="/phases/assessment-phase.html">Assessment</a></li>
-      <li style="display: block; height: 100%; padding:20px;  background:#76CAEE; "><a href="/phases/implementation-phase.html">Implementation</a></li>
+      <li style="display: block; height: 100%; padding:20px;"><a href="/process-code-software-procurement/index.html">Introduction</a></li>
+      <li style="display: block; height: 100%; padding:20px;  "><a href="/process-code-software-procurement/phases/orientation-phase.html" style="">Orientation</a></li>
+      <li style="display: block; height: 100%; padding:20px; "><a href="/process-code-software-procurement/phases/planning-phase.html">Planning</a></li>
+      <li style="display: block; height: 100%; padding:20px; "><a href="/process-code-software-procurement/phases/assessment-phase.html">Assessment</a></li>
+      <li style="display: block; height: 100%; padding:20px;  background:#76CAEE; "><a href="/process-code-software-procurement/phases/implementation-phase.html">Implementation</a></li>
   </ol>
   <span id="span-prev-next" class="theme-prev-next">
 
@@ -176,15 +159,18 @@
 
 
 
+<span id="span-prev" class="theme-prev-next-prev"><a href="/process-code-software-procurement/phases/09-contracting.html" style="padding:5px;  background:#FDF251;
+">&#8592; Contracting</a></span>
 
 
 
 
 
 
-<span id="span-prev" class="theme-prev-next-prev"><a href="/phases/10-agile-development-integration.html" style="padding:5px;  background:#76CAEE;
-">&#8592; Agile development and integration</a></span>
 
+
+<span id="span-next" class="theme-prev-next-next"><a href="/process-code-software-procurement/phases/10-agile-development-integration.html" style="padding:5px;  background:#76CAEE;
+">Agile development and integration &#8594;</a></span>
 
 
 
@@ -194,114 +180,33 @@
 </div>
 <div style="clear:both;"></div>
 
-<h1 id="11-integration">11. Integration</h1>
-
-<p><img src="/images/implementation-1.svg" alt="Diagram showing who should read step 11" /></p>
+<h1 id="implementation-phase">Implementation phase</h1>
 
 <blockquote>
   <p>Read this regardless of your procurement approach.</p>
 </blockquote>
 
-<h2 id="goals">Goals</h2>
+<p>The fourth and final phase is about implementation. Whether you are building software in-house or collaborating with an external vendor, this is when agile development happens.</p>
 
-<ul>
-  <li>To support the vendor’s agile development process.</li>
-  <li>To incrementally deploy working software modules (use the “Development and Operations” or “DevOps” model).</li>
-  <li>To work with the vendor to produce thorough technical and user documentation.</li>
-  <li>To create clear plans for staff training and software maintenance.</li>
-</ul>
+<p>You will go through an iterative cadence of planning, building, deploying and testing software – what are often called “sprints.” Each sprint lasts 2-4 weeks, and it is focused on a single module that addresses a particular user journey. The sprint should be scoped, budgeted, and contracted collaboratively between software engineers, product owners, and any associated legal staff. At the end of the sprint, the module will be fully <em>developed</em> and <em>operational</em>(often called a DevOps approach). That means end users can start testing it and giving feedback, and it means you’re in control of the next steps. You can decide whether or not the initial software idea was the right one, whether or not the module meets your expectations, and whether or not to continue with the vendor.</p>
 
-<h2 id="actions">Actions</h2>
+<p>You will continue running through sprints and creating individual modules until the full feature set is built, deployed to the satisfaction of end users, and fully integrated with the city’s technical environment. Return to the initial user journeys and problem statement you wrote. How does the end product measure up? Did you solve the problem or seize the opportunity? Does it exceed your expectations?</p>
 
-<h3 id="using-a-devops-approach">Using a DevOps approach</h3>
+<p>Throughout this process, you also have the crucial responsibility of ensuring that the software is set up for longevity. If you are working with a vendor, make sure that the city’s technical staff collaborate on writing thorough documentation. The more you can maintain, troubleshoot and update the software in-house, the better. It is equally important to document from the end user perspective – noting best practices and how the tool fits within the job description and daily operations of municipal service delivery. A common risk is staff turnover, and clear documentation is key to making sure that know-how and expertise doesn’t disappear with individuals.</p>
 
-<p>Your vendor should be using an agile development approach, which means continuously producing and delivering software modules. “Development and operations” involves continuously integrating and deploying software modules in the actual working environment (technical and operational), as they are built. That means launching a piece of software on the city’s servers and/or or having users start using it in their daily workflow. This reduces the risk of incompatibility at the end of a long process and the burdensome troubleshooting that comes with it. It also means that key associated staff become familiar with the product along the way, and can even provide feedback that helps guide iterations or future modules.</p>
+<p>Your plan should also include regular performance audits, staff training and onboarding protocols, resource allocation for software maintenance, and – if the software is open source – a plan for sharing with other jurisdictions. If you have followed this process code well, there is no reason that you wouldn’t have an excellent product that fills a real need in the public sector. You should be proud of it, and others should find it not only useful, but also inspiring!</p>
 
-<ul>
-  <li>At the end of every sprint milestone, ensure that the vendor delivers the module.</li>
-  <li>Work with the vendor to deploy the module in the city’s technical environment.</li>
-  <li>Coordinate with end-users to test and integrate the module in their daily workflow. They are the best resources for evaluation. If it isn’t functional, then it isn’t good enough – you can do another sprint. Provide feedback to the vendor.</li>
-</ul>
+<h2 id="read-on">Read on</h2>
 
-<h3 id="creating-a-documentation-training-and-maintenance-plan">Creating a documentation, training and maintenance plan</h3>
+<blockquote>
+  <p>If you are building software in-house, hired a vendor to build custom software or hired a vendor to customize existing open source software, read step <a href="/process-code-software-procurement/phases/10-agile-development-integration.html">10: Agile Development &amp; Deployment</a> and then <a href="/process-code-software-procurement/phases/11-integration.html">step 11: Integration</a>.</p>
+</blockquote>
 
-<p>Using a DevOps approach means that modules will be continuously deployed into the city’s working environment. End users will have first-hand experience with the new software, and can give feedback as the product is being built. However, it is still important to document the software thoroughly. This includes technical documentation (overall architecture, modular integration, specific module function, ongoing maintenance considerations) as well as user documentation (what end users should be aware of, how to train new users, and best practices for getting the most out of the software). Hand in hand with the documentation, it is important to create a simple plan for ongoing staff training and software maintenance. These can be time- and budget-intensive, so be sure to allocate resources appropriately. Both should be continuously updated as working drafts throughout the software development process, and completed when all features are built and perform at a satisfactory level.</p>
+<p><img src="/process-code-software-procurement/images/implementation-2.svg" alt="Diagram showing who should read step 10" /></p>
 
-<ul>
-  <li>Ensure that the technical team and the product owner collaborate on writing thorough documentation (technical and user documentation).</li>
-  <li>Create a maintenance plan that includes:
-    <ul>
-      <li>Regular (annual) performance audits.</li>
-      <li>Staff training plan to onboard new users in the future.</li>
-      <li>Staff time for software maintenance and updating (particularly if the city’s digital infrastructure changes in ways that affect the software performance).</li>
-      <li>Strategies for sharing with other jurisdictions (if it is custom software or OSS).</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="common-challenges">Common challenges</h2>
-
-<h3 id="staff-turnover">Staff turnover</h3>
-
-<p>Retention and continuity can be a significant challenge, particularly for technical expertise – where city governments have to compete with private sector software companies for talent. Staff turnover can confuse a process and cause delays.</p>
-
-<h3 id="lack-of-familiarity-with-andor-lack-of-involvement-in-the-agile-development-process">Lack of familiarity with and/or lack of involvement in the agile development process</h3>
-
-<p>City staff assume that they cannot or should not be involved with the developer team. Coders should have decision-making power when it comes to technical architecture, timelines, and required effort, but they do not know what end users need.</p>
-
-<h3 id="lack-of-communication-with-end-users">Lack of communication with end users</h3>
-
-<p>Frontline staff members will be affected by continuous integration. It is important to notify them of changes to their daily workflow, and to seek their feedback throughout the development process.</p>
-
-<h3 id="lack-of-decision-making-power-granted-to-technical-experts">Lack of decision-making power granted to technical experts</h3>
-
-<p>This can result in over-specifying or under-specifying feature sets. It can also cause misalignment on sprint plans, timelines, effort required, and budget.</p>
-
-<h3 id="lack-of-attention-and-resources-for-lifetime-ownership">Lack of attention and resources for lifetime ownership</h3>
-
-<p>A contract is not the end of a procurement process, nor is final product delivery. It is important to have a detailed plan for ongoing use and ownership.</p>
-
-<h2 id="checklist">Checklist</h2>
-
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Working relationship with a vendor to collaboratively carry out an agile development, including modular budgeting and DevOps plan</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Documentation</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Lifetime use plan and resourcing</li>
-</ul>
-
-<h2 id="references">References</h2>
-
-<p>Agile development</p>
-
-<p><a href="https://agile.18f.gov">https://agile.18f.gov</a></p>
-
-<p>Project management (with evaluation metrics)</p>
-
-<p><a href="https://www.atlassian.com/agile/project-management/metrics">https://www.atlassian.com/agile/project-management/metrics</a></p>
-
-<p>Budgeting and overseeing tech projects</p>
-
-<p><a href="https://derisking-guide.18f.gov/state-field-guide/budgeting-tech/">https://derisking-guide.18f.gov/state-field-guide/budgeting-tech/</a></p>
-
-<p>IT Product Management Integrated planning guide</p>
-
-<p><a href="https://sara-sabr.github.io/ITStrategy/2021/10/15/product-management-part-2.html">https://sara-sabr.github.io/ITStrategy/2021/10/15/product-management-part-2.html</a></p>
-
-<p>CDS Product Evaluation Guide</p>
-
-<p><a href="https://web.archive.org/web/20211013211805/https%3A//digital.canada.ca/tools-and-resources/evaluation-framework/">https://digital.canada.ca/tools-and-resources/evaluation-framework/</a></p>
-
-<p>Open North: Open and ethical procurement guide on engaging with the private sector</p>
-
-<p><a href="https://opennorth.ca/publications/2hvkzrlujufylsvxgf7li5_en">https://opennorth.ca/publications/2hvkzrlujufylsvxgf7li5_en</a></p>
-
-<p>18F: Work with the vendor</p>
-
-<p><a href="https://product-guide.18f.gov/partners/vendor/">https://product-guide.18f.gov/partners/vendor/</a></p>
-
-<p>Agile Development 101</p>
-
-<p><a href="https://www.agilealliance.org/agile101/">https://www.agilealliance.org/agile101/</a></p>
+<blockquote>
+  <p>Skip ahead to <a href="/process-code-software-procurement/phases/11-integration.html">step 11: Integration</a> if you bought off the shelf software.</p>
+</blockquote>
 
   </article>
 </section>
@@ -344,7 +249,7 @@
       </p>
       <p>
         
-        <a href="/LICENSE.html" rel="license">
+        <a href="/process-code-software-procurement/LICENSE.html" rel="license">
         Creative Commons Zero v1.0 Universal
         </a>
       </p>

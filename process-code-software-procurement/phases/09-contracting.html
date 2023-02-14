@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Implementation phase, Process code for software procurement</title>
+  <title>Contracting, Process code for software procurement</title>
   <meta name="description" content="A process code for software procurement ">
 
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/process-code-software-procurement/assets/style.css">
 
   
-  <link rel="canonical" href="/phases/implementation-phase.html">
+  <link rel="canonical" href="/process-code-software-procurement/phases/09-contracting.html">
   
 
   <link rel="icon" href="https://brand.publiccode.net/logo/mark-128w128h.png">
@@ -47,7 +47,7 @@
     <header>
   
     <section class="site-title ">
-      <a href="">Process code for software procurement</a>
+      <a href="/process-code-software-procurement">Process code for software procurement</a>
     </section>
   
 
@@ -80,7 +80,23 @@
     
       <h3 id="page-table-of-contents">Contents</h3>
       <ol class="table-of-contents">
-  <li><a href="#read-on">Read on</a></li>
+  <li><a href="#goals">Goals</a></li>
+  <li><a href="#actions">Actions</a>
+    <ol>
+      <li><a href="#incorporating-non-negotiable-legal-requirements">Incorporating non-negotiable legal requirements</a></li>
+      <li><a href="#working-with-technical-requirements">Working with technical requirements</a></li>
+      <li><a href="#fostering-good-working-relationships">Fostering good working relationships</a></li>
+    </ol>
+  </li>
+  <li><a href="#common-challenges">Common challenges</a>
+    <ol>
+      <li><a href="#legacy-language-or-contract-requirements">Legacy language or contract requirements</a></li>
+      <li><a href="#insufficient-technical-specifications">Insufficient technical specifications</a></li>
+      <li><a href="#insufficient-resourcing">Insufficient resourcing</a></li>
+    </ol>
+  </li>
+  <li><a href="#checklist">Checklist</a></li>
+  <li><a href="#references">References</a></li>
 </ol>
 
     
@@ -92,9 +108,9 @@
     <h3 id="page-edit-links">Contribute on GitHub</h3>
     <ul class="edit-links">
       <!-- The default branch is develop, while site.github.source.branch is gh-pages -->
-      <li><a href="https://github.com/publiccodenet/process-code-software-procurement/edit/develop/phases/implementation-phase.md"><svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <li><a href="https://github.com/publiccodenet/process-code-software-procurement/edit/develop/phases/09-contracting.md"><svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
  Edit this page</a></li>
-      <li><a href="https://github.com/publiccodenet/process-code-software-procurement/issues/new?body=I'd like to report an issue in `phases/implementation-phase.md`"><svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+      <li><a href="https://github.com/publiccodenet/process-code-software-procurement/issues/new?body=I'd like to report an issue in `phases/09-contracting.md`"><svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
  File an Issue</a></li>
     </ul>
   
@@ -108,11 +124,11 @@
     <!-- To-do: move the css to a class in a separate file -->
 <div>
   <ol style="display: flex; flex-wrap: wrap; justify-content: space-around; height: 100%; list-style-type:none ;">
-      <li style="display: block; height: 100%; padding:20px;"><a href="/index.html">Introduction</a></li>
-      <li style="display: block; height: 100%; padding:20px;  "><a href="/phases/orientation-phase.html" style="">Orientation</a></li>
-      <li style="display: block; height: 100%; padding:20px; "><a href="/phases/planning-phase.html">Planning</a></li>
-      <li style="display: block; height: 100%; padding:20px; "><a href="/phases/assessment-phase.html">Assessment</a></li>
-      <li style="display: block; height: 100%; padding:20px;  background:#76CAEE; "><a href="/phases/implementation-phase.html">Implementation</a></li>
+      <li style="display: block; height: 100%; padding:20px;"><a href="/process-code-software-procurement/index.html">Introduction</a></li>
+      <li style="display: block; height: 100%; padding:20px;  "><a href="/process-code-software-procurement/phases/orientation-phase.html" style="">Orientation</a></li>
+      <li style="display: block; height: 100%; padding:20px; "><a href="/process-code-software-procurement/phases/planning-phase.html">Planning</a></li>
+      <li style="display: block; height: 100%; padding:20px;  background:#FDF251; "><a href="/process-code-software-procurement/phases/assessment-phase.html">Assessment</a></li>
+      <li style="display: block; height: 100%; padding:20px; "><a href="/process-code-software-procurement/phases/implementation-phase.html">Implementation</a></li>
   </ol>
   <span id="span-prev-next" class="theme-prev-next">
 
@@ -156,11 +172,8 @@
 
 
 
-
-
-
-<span id="span-prev" class="theme-prev-next-prev"><a href="/phases/09-contracting.html" style="padding:5px;  background:#FDF251;
-">&#8592; Contracting</a></span>
+<span id="span-prev" class="theme-prev-next-prev"><a href="/process-code-software-procurement/phases/08-bid-evaluation.html" style="padding:5px;  background:#FDF251;
+">&#8592; Bid evaluation</a></span>
 
 
 
@@ -169,8 +182,11 @@
 
 
 
-<span id="span-next" class="theme-prev-next-next"><a href="/phases/10-agile-development-integration.html" style="padding:5px;  background:#76CAEE;
-">Agile development and integration &#8594;</a></span>
+<span id="span-next" class="theme-prev-next-next"><a href="/process-code-software-procurement/phases/implementation-phase.html" style="padding:5px;  background:#76CAEE;
+">Implementation phase &#8594;</a></span>
+
+
+
 
 
 
@@ -180,33 +196,107 @@
 </div>
 <div style="clear:both;"></div>
 
-<h1 id="implementation-phase">Implementation phase</h1>
+<h1 id="9-contracting">9. Contracting</h1>
+
+<p><img src="/process-code-software-procurement/images/assessment-3.svg" alt="Diagram showing who should read step 9" /></p>
 
 <blockquote>
-  <p>Read this regardless of your procurement approach.</p>
+  <p>This step is for organizations:</p>
+
+  <ul>
+    <li>buying off the shelf software</li>
+    <li>hiring a vendor to customize existing open source software</li>
+    <li>buying custom software</li>
+  </ul>
+
+  <p>If you are building software in-house, read <a href="/process-code-software-procurement/phases/06-agile-development-planning-resourcing.html">6. Agile development planning and resourcing</a> or skip ahead to the <a href="/process-code-software-procurement/phases/implementation-phase.html">Implementation phase</a>.</p>
 </blockquote>
 
-<p>The fourth and final phase is about implementation. Whether you are building software in-house or collaborating with an external vendor, this is when agile development happens.</p>
+<h2 id="goals">Goals</h2>
 
-<p>You will go through an iterative cadence of planning, building, deploying and testing software – what are often called “sprints.” Each sprint lasts 2-4 weeks, and it is focused on a single module that addresses a particular user journey. The sprint should be scoped, budgeted, and contracted collaboratively between software engineers, product owners, and any associated legal staff. At the end of the sprint, the module will be fully <em>developed</em> and <em>operational</em>(often called a DevOps approach). That means end users can start testing it and giving feedback, and it means you’re in control of the next steps. You can decide whether or not the initial software idea was the right one, whether or not the module meets your expectations, and whether or not to continue with the vendor.</p>
+<ul>
+  <li>To cover the city’s liability and ensure that vendors are accountable for performance.</li>
+  <li>To ensure the integrity of a working relationship during the development process.</li>
+  <li>To establish an effective development process and working relationship.</li>
+</ul>
 
-<p>You will continue running through sprints and creating individual modules until the full feature set is built, deployed to the satisfaction of end users, and fully integrated with the city’s technical environment. Return to the initial user journeys and problem statement you wrote. How does the end product measure up? Did you solve the problem or seize the opportunity? Does it exceed your expectations?</p>
+<h2 id="actions">Actions</h2>
 
-<p>Throughout this process, you also have the crucial responsibility of ensuring that the software is set up for longevity. If you are working with a vendor, make sure that the city’s technical staff collaborate on writing thorough documentation. The more you can maintain, troubleshoot and update the software in-house, the better. It is equally important to document from the end user perspective – noting best practices and how the tool fits within the job description and daily operations of municipal service delivery. A common risk is staff turnover, and clear documentation is key to making sure that know-how and expertise doesn’t disappear with individuals.</p>
+<h3 id="incorporating-non-negotiable-legal-requirements">Incorporating non-negotiable legal requirements</h3>
 
-<p>Your plan should also include regular performance audits, staff training and onboarding protocols, resource allocation for software maintenance, and – if the software is open source – a plan for sharing with other jurisdictions. If you have followed this process code well, there is no reason that you wouldn’t have an excellent product that fills a real need in the public sector. You should be proud of it, and others should find it not only useful, but also inspiring!</p>
+<p>Contracts should lay a legal foundation for project development and delivery. Most cities have legal counsel and precedent contracts which include ‘terms of contract’. However, those terms may directly conflict with your process or objectives (for example. making agile development impossible). You will need to determine which requirements are non-negotiable and which are flexible. For software procurement in particular, the following points are important.</p>
 
-<h2 id="read-on">Read on</h2>
+<ul>
+  <li>Review standard terms of contract provided by the legal department. Identify specific points that conflict with your intended process or objectives.</li>
+  <li>Include dispute resolution protocols. Specify that disputes will be resolved under the jurisdiction of local courts. In the event of a dispute, the agreed contract will take precedence over the vendor’s norms or standard license templates. If software is open source, the OSS license will hold.</li>
+  <li>Specify that suppliers must have ownership or legal right to use the software, equipment and tools they use in the course of the contract.</li>
+  <li>Specify that documents, software, data, and knowledge produced in the course of the contract are the sole property of the city.</li>
+</ul>
 
-<blockquote>
-  <p>If you are building software in-house, hired a vendor to build custom software or hired a vendor to customize existing open source software, read step <a href="/phases/10-agile-development-integration.html">10: Agile Development &amp; Deployment</a> and then <a href="/phases/11-integration.html">step 11: Integration</a>.</p>
-</blockquote>
+<h3 id="working-with-technical-requirements">Working with technical requirements</h3>
 
-<p><img src="/images/implementation-2.svg" alt="Diagram showing who should read step 10" /></p>
+<p>Include technical expectations and standards in the contract.</p>
 
-<blockquote>
-  <p>Skip ahead to <a href="/phases/11-integration.html">step 11: Integration</a> if you bought off the shelf software.</p>
-</blockquote>
+<ul>
+  <li>Tend toward hosting private citizen information and public sector data on city servers.</li>
+  <li>Specify that data may not be accessed, sold, or shared without the written permission of the city.</li>
+  <li>Public money = public code. If it is a custom software development project, tend toward releasing the code under an open license. This promotes further use and development, reduces contract handcuffs, and prevents giving a competitive edge to the vendor with taxpayer money.</li>
+  <li>Promote interoperability (with software already in use at the city and other modules that are part of the project)</li>
+</ul>
+
+<h3 id="fostering-good-working-relationships">Fostering good working relationships</h3>
+
+<p>Contracts are not the end of a procurement process – the success of the project will depend on how well the city collaborates with the vendor. A good working dynamic will reduce errors based on miscommunications, speed up the development process, and improve the final outcome. It will also build alignment between the municipal staff and agencies who will be responsible for using and maintaining the software.</p>
+
+<ul>
+  <li>Identify a primary contact (product owner) and key stakeholders. It may be useful to name additional stakeholders involved using the following tags:
+    <ul>
+      <li>Decision-maker, Accountable, Responsible, Consulted, Informed.</li>
+    </ul>
+  </li>
+  <li>The product owner (as well as other key stakeholders, as needed) should attend sprint planning and review meetings.</li>
+  <li>The product owner should work to answer questions within the municipality and secure buy-in to facilitate the long term implementation and maintenance of software.</li>
+  <li>Make sure that city staff have time to contribute to the process and are aware of the important role that they can fill: co-designing sprints, giving feedback, adding or subtracting features, and sharing insights about day-to-day usability.</li>
+</ul>
+
+<h2 id="common-challenges">Common challenges</h2>
+
+<h3 id="legacy-language-or-contract-requirements">Legacy language or contract requirements</h3>
+
+<p>Outdated clauses can conflict with the project scope or impede an effective development process – particularly in the case of agile software development.</p>
+
+<h3 id="insufficient-technical-specifications">Insufficient technical specifications</h3>
+
+<p>If a contract does not clearly spell out the city’s expectations, there can be downstream issues with, for example, ownership, privacy, security, adaptation, and monetization. If the city does not have technical standards, use well-accepted national or international standards.</p>
+
+<h3 id="insufficient-resourcing">Insufficient resourcing</h3>
+
+<p>Software development should be a collaborative process – internally and with the vendor. Make sure that staff have sufficient time to contribute and understand expectations.</p>
+
+<h2 id="checklist">Checklist</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Contract with the winning vendor</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Purchase order with the winning vendor</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Internal alignment on the project plan and internal working group as needed</li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<p>Boston Procurement Reform Resources</p>
+
+<p><a href="https://drive.google.com/drive/folders/0B2quxBDYiO5CMUlxRWhLM3FISlE?resourcekey=0-8qtC80gx00lIyxjn6e48zw&amp;usp=sharing">https://drive.google.com/drive/folders/0B2quxBDYiO5CMUlxRWhLM3FISlE?resourcekey=0-8qtC80gx00lIyxjn6e48zw&amp;usp=sharing</a></p>
+
+<p>Open Software Licenses 101</p>
+
+<p><a href="https://fossa.com/blog/open-source-licenses-101-mit-license/">https://fossa.com/blog/open-source-licenses-101-mit-license/</a></p>
+
+<p>FairMarkit: Procurement Contract Management Best Practices <br />
+<a href="https://www.fairmarkit.com/blog/procurement-contract-management-best-practices">https://www.fairmarkit.com/blog/procurement-contract-management-best-practices</a></p>
+
+<p>McKinsey: Taking supplier collaboration to the next level</p>
+
+<p><a href="https://www.mckinsey.com/business-functions/operations/our-insights/taking-supplier-collaboration-to-the-next-level">https://www.mckinsey.com/business-functions/operations/our-insights/taking-supplier-collaboration-to-the-next-level</a></p>
 
   </article>
 </section>
@@ -249,7 +339,7 @@
       </p>
       <p>
         
-        <a href="/LICENSE.html" rel="license">
+        <a href="/process-code-software-procurement/LICENSE.html" rel="license">
         Creative Commons Zero v1.0 Universal
         </a>
       </p>

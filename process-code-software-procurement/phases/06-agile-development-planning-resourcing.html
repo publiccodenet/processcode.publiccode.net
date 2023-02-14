@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Market research, Process code for software procurement</title>
+  <title>Agile development planning and resourcing, Process code for software procurement</title>
   <meta name="description" content="A process code for software procurement ">
 
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/process-code-software-procurement/assets/style.css">
 
   
-  <link rel="canonical" href="/phases/03-market-research.html">
+  <link rel="canonical" href="/process-code-software-procurement/phases/06-agile-development-planning-resourcing.html">
   
 
   <link rel="icon" href="https://brand.publiccode.net/logo/mark-128w128h.png">
@@ -47,7 +47,7 @@
     <header>
   
     <section class="site-title ">
-      <a href="">Process code for software procurement</a>
+      <a href="/process-code-software-procurement">Process code for software procurement</a>
     </section>
   
 
@@ -83,18 +83,18 @@
   <li><a href="#goals">Goals</a></li>
   <li><a href="#actions">Actions</a>
     <ol>
-      <li><a href="#scanning-the-landscape">Scanning the landscape</a></li>
-      <li><a href="#identifying-types-of-vendors">Identifying types of vendors</a></li>
-      <li><a href="#setting-internal-and-external-benchmarks">Setting internal and external benchmarks</a></li>
-      <li><a href="#creating-a-market-analysis-report">Creating a market analysis report</a></li>
-      <li><a href="#knowing-who-can-deliver">Knowing who can deliver</a></li>
+      <li><a href="#initial-planning-for-an-agile-development-project">Initial planning for an agile development project</a></li>
+      <li><a href="#resourcing-an-agile-development-project">Resourcing an agile development project</a></li>
+      <li><a href="#modularization-and-modular-budgeting">Modularization and modular budgeting</a></li>
     </ol>
   </li>
   <li><a href="#common-challenges">Common challenges</a>
     <ol>
-      <li><a href="#lack-of-internal-consistency-and-digital-integration">Lack of internal consistency and digital integration</a></li>
-      <li><a href="#hesitancy-to-engage-directly-with-vendors">Hesitancy to engage directly with vendors</a></li>
-      <li><a href="#insufficient-communications-between-cities">Insufficient communications between cities</a></li>
+      <li><a href="#inadequate-resources">Inadequate resources</a></li>
+      <li><a href="#difficulty-in-migrating">Difficulty in migrating</a></li>
+      <li><a href="#scope-creep">Scope creep</a></li>
+      <li><a href="#over-specification">Over-specification</a></li>
+      <li><a href="#lack-of-communication-and-collaboration">Lack of communication and collaboration</a></li>
     </ol>
   </li>
   <li><a href="#checklist">Checklist</a></li>
@@ -110,9 +110,9 @@
     <h3 id="page-edit-links">Contribute on GitHub</h3>
     <ul class="edit-links">
       <!-- The default branch is develop, while site.github.source.branch is gh-pages -->
-      <li><a href="https://github.com/publiccodenet/process-code-software-procurement/edit/develop/phases/03-market-research.md"><svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <li><a href="https://github.com/publiccodenet/process-code-software-procurement/edit/develop/phases/06-agile-development-planning-resourcing.md"><svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
  Edit this page</a></li>
-      <li><a href="https://github.com/publiccodenet/process-code-software-procurement/issues/new?body=I'd like to report an issue in `phases/03-market-research.md`"><svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+      <li><a href="https://github.com/publiccodenet/process-code-software-procurement/issues/new?body=I'd like to report an issue in `phases/06-agile-development-planning-resourcing.md`"><svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
  File an Issue</a></li>
     </ul>
   
@@ -126,11 +126,11 @@
     <!-- To-do: move the css to a class in a separate file -->
 <div>
   <ol style="display: flex; flex-wrap: wrap; justify-content: space-around; height: 100%; list-style-type:none ;">
-      <li style="display: block; height: 100%; padding:20px;"><a href="/index.html">Introduction</a></li>
-      <li style="display: block; height: 100%; padding:20px;  background:#5A57C3;  "><a href="/phases/orientation-phase.html" style=" color:white; ">Orientation</a></li>
-      <li style="display: block; height: 100%; padding:20px; "><a href="/phases/planning-phase.html">Planning</a></li>
-      <li style="display: block; height: 100%; padding:20px; "><a href="/phases/assessment-phase.html">Assessment</a></li>
-      <li style="display: block; height: 100%; padding:20px; "><a href="/phases/implementation-phase.html">Implementation</a></li>
+      <li style="display: block; height: 100%; padding:20px;"><a href="/process-code-software-procurement/index.html">Introduction</a></li>
+      <li style="display: block; height: 100%; padding:20px;  "><a href="/process-code-software-procurement/phases/orientation-phase.html" style="">Orientation</a></li>
+      <li style="display: block; height: 100%; padding:20px;  background:#ED706B; "><a href="/process-code-software-procurement/phases/planning-phase.html">Planning</a></li>
+      <li style="display: block; height: 100%; padding:20px; "><a href="/process-code-software-procurement/phases/assessment-phase.html">Assessment</a></li>
+      <li style="display: block; height: 100%; padding:20px; "><a href="/process-code-software-procurement/phases/implementation-phase.html">Implementation</a></li>
   </ol>
   <span id="span-prev-next" class="theme-prev-next">
 
@@ -150,18 +150,6 @@
 
 
 
-<span id="span-prev" class="theme-prev-next-prev"><a href="/phases/02-discovery-research-problem-statement.html" style="padding:5px;  background:#5A57C3; color:white;
-">&#8592; Discovery research and problem statement</a></span>
-
-
-
-
-
-
-
-
-<span id="span-next" class="theme-prev-next-next"><a href="/phases/04-strategic-analysis.html" style="padding:5px;  background:#5A57C3; color:white;
-">Strategic analysis &#8594;</a></span>
 
 
 
@@ -174,6 +162,18 @@
 
 
 
+<span id="span-prev" class="theme-prev-next-prev"><a href="/process-code-software-procurement/phases/05-RFP-writing.html" style="padding:5px;  background:#ED706B;
+">&#8592; RFP Writing</a></span>
+
+
+
+
+
+
+
+
+<span id="span-next" class="theme-prev-next-next"><a href="/process-code-software-procurement/phases/assessment-phase.html" style="padding:5px;  background:#FDF251;
+">Assessment phase &#8594;</a></span>
 
 
 
@@ -198,122 +198,138 @@
 </div>
 <div style="clear:both;"></div>
 
-<h1 id="3-market-research">3. Market research</h1>
-
-<p><img src="/images/orientation-3.svg" alt="Diagram showing who should read step 3" /></p>
+<h1 id="6-agile-development-planning-and-resourcing">6. Agile development planning and resourcing</h1>
 
 <blockquote>
-  <p>Read this regardless of your procurement approach.</p>
+  <p>Read this if you are building software in-house. For all other procurement approaches, skip ahead to the <a href="/process-code-software-procurement/phases/assessment-phase.html">Assessment phase</a>.</p>
 </blockquote>
+
+<p><img src="/process-code-software-procurement/images/planning-4.svg" alt="Diagram showing who should read step 6" /></p>
 
 <h2 id="goals">Goals</h2>
 
-<ol>
-  <li>To become familiar with the problem and the landscape of potential solutions.</li>
-  <li>To engage responsibly with experts, civic tech community, and the vendor pool.</li>
-  <li>To circulate the problem statement to experts.</li>
-  <li>To establish internal and external benchmarks.</li>
-</ol>
+<ul>
+  <li>To turn the problem statement into objective and fair outcomes and evaluation criteria, incorporating insights from market research and benchmarking exercises.</li>
+  <li>To incorporate departmental and municipal priorities into the criteria.</li>
+  <li>To develop an objective evaluation framework.</li>
+  <li>To lay the foundations for an effective internal development process, including adequate resources for software development and maintenance.</li>
+  <li>To use modular budgeting, awarding small contracts based on incremental performance reviews.</li>
+</ul>
 
 <h2 id="actions">Actions</h2>
 
-<h3 id="scanning-the-landscape">Scanning the landscape</h3>
+<h3 id="initial-planning-for-an-agile-development-project">Initial planning for an agile development project</h3>
 
-<p>Become familiar with the world of experts, civic tech enthusiasts and vendors. And let them become familiar with you! Discuss the problems you are trying to solve, and hear their thoughts on existing or potential solutions.</p>
+<p>The best practice for contemporary software development is “agile development.” This is a project planning and execution method that emphasizes creativity, reduces risk, and biases toward results. If you are building software in-house or procuring custom development, you will start with a rough, high-level pre-plan. This initial planning and resourcing will lay a foundation for collaborating with a vendor or beginning your own process of developing software in-house.</p>
 
 <ul>
-  <li>Market research and neutral market analysis of existing commercial solutions</li>
-  <li>Look at how other cities have addressed the same / similar problems</li>
-  <li>Call for ideas (informally, in the civic tech community)</li>
-  <li>Issue a Request for Information (RFI) (formally, through city channels)</li>
-  <li>Host an event related to the problem and invite community groups and vendors</li>
-  <li>Reach out to the academic sector</li>
-  <li>…?  (this is an opportunity for creativity!)</li>
+  <li>Write a simple, clear description of what the solution is, and how it addresses the problem statement.</li>
+  <li>List all of the different user groups who will interact with the solution.</li>
+  <li>List the features that will make the solution work. Categorize the list into “Must-have” and “Nice-to-have” features.</li>
 </ul>
 
-<h3 id="identifying-types-of-vendors">Identifying types of vendors</h3>
+<h3 id="resourcing-an-agile-development-project">Resourcing an agile development project</h3>
 
-<p>Broadly speaking, there are types of custom software development companies. These are: Enterprise, Big Business, Mid-Market, Small, Freelance, Off-shore.</p>
+<p>Software development requires significant technical expertise, particularly for applications that perform essential services and need to be secure and dependable. Some cities have IT departments that can execute such projects in-house. Others will issue an RFP to find a vendor that can build custom software, or to find a vendor that can do a custom implementation of existing open source software. In all cases, it is important to appropriately resource the project so that the process is collaborative and leads to the right solution.</p>
 
 <ul>
-  <li>Explore the market in each of these categories.</li>
+  <li>Name the product owner, teams, and other stakeholders involved using the following tags:Decision-maker, Accountable, Responsible, Consulted, Informed.</li>
+  <li>Set a reasonable timeline with sufficient space for iteration and exploration.</li>
+  <li>Make sure that there are milestones along the way. Set meetings when all associated stakeholders can review the progress to date and provide feedback (aligning with DevOps and modular budget milestones).</li>
 </ul>
 
-<h3 id="setting-internal-and-external-benchmarks">Setting internal and external benchmarks</h3>
+<h3 id="modularization-and-modular-budgeting">Modularization and modular budgeting</h3>
 
-<p>Become familiar with peers and precedents. Ifother cities or organizations have already solved the problem, consider licensing or partnership. If other cities need to solve the same problem, consider pooling resources in a bilateral agreement.</p>
-
-<ul>
-  <li>What have prior software projects cost (to procure and to maintain)? Have they been successful?</li>
-  <li>What do other cities use to solve the same problem? Is their software open source?</li>
-  <li>What do businesses use to solve the same problem?</li>
-</ul>
-
-<h3 id="creating-a-market-analysis-report">Creating a market analysis report</h3>
-
-<p>Document what you find, in a clear, neutral and objective way.</p>
+<p>Monolithic, long-term software plans (the “waterfall” approach) are risky, because requirements change along the way, and the solution you initially planned may not be the best one. Agile development resolves that problem, because planning happens continuously, in response to what you are building and learning. Agile development produces discrete modules that are continuously deployed, which means you will see functional software much sooner. Agile development projects are well-suited for modular budgeting. That means you can focus on securing a budget for specific deliverables that can stand on their own. A deliverable might require one or more sprints.</p>
 
 <ul>
-  <li>Market maturity (number and size of potential providers)</li>
-  <li>Commercial readiness (reliability of solutions)</li>
-  <li>Number of comparable software solutions, their business models and approaches.</li>
-  <li>Consult libraries of Open Source Software (OSS) and resources provided by higher levels of government (e.g. the US GSA, Data.Gov, the Canadian Digital Service)</li>
-</ul>
-
-<h3 id="knowing-who-can-deliver">Knowing who can deliver</h3>
-
-<p>In some cases, there is only one vendor that can deliver the required solution – but those cases are rare. In general, competition is a good thing for RFPs. The Association of Certified Fraud Examiners has good resources to guide your rationale for sole-sourcing.</p>
-
-<ul>
-  <li>Identify the landscape of vendors who could fulfill the project needs you’ve documented.</li>
+  <li>Establish an overarching plan for the software package and create a rough map of the individual modules. This should include features for each module, an interoperability plan, and a general technical architecture.</li>
+  <li>Identify one or two modules that you will start with. Scope the features of those modules.</li>
+  <li>Define evaluation criteria for each of the initial modules.</li>
+  <li>Create a budget for the initial modules that accounts for its complexity (measured as engineers’ time). This will require a working technical knowledge of the standard software development process, and familiarity with the project at hand – work with the IT department and get feedback from engineers themselves.</li>
+  <li>At the end of the initial sprint, the module should be deployed into the city’s actual working environment (see DevOps below).</li>
+  <li>Each module should be rigorously evaluated.
+    <ul>
+      <li>Does the module meet KPIs? Does it address a user journey that is relevant to the problem statement?</li>
+      <li>Is the product logical and usable for the end user?</li>
+      <li>Does the product integrate with the city’s existing digital environment?</li>
+      <li>Did the process align with your values and qualitative objectives?</li>
+    </ul>
+  </li>
 </ul>
 
 <h2 id="common-challenges">Common challenges</h2>
 
-<h3 id="lack-of-internal-consistency-and-digital-integration">Lack of internal consistency and digital integration</h3>
+<h3 id="inadequate-resources">Inadequate resources</h3>
 
-<p>Most city governments work with a patchwork of systems. That means they need to use, maintain, and modernize legacy systems simultaneously.</p>
+<p>Software projects require sufficient staff time and expertise. It is particularly important to account for the open exploration and iterative revision that is a core principle of agile development.</p>
 
-<h3 id="hesitancy-to-engage-directly-with-vendors">Hesitancy to engage directly with vendors</h3>
+<h3 id="difficulty-in-migrating">Difficulty in migrating</h3>
 
-<p>Civil servants feel that engaging with vendors is dangerous. It isn’t. Get to know the local and international software community. Become familiar with certain companies you respect. Be actively involved and ask questions.</p>
+<p>Most projects will require a transition from a legacy system to a new system. This can be particularly challenging in the case of essential services that cannot experience a gap in performance.</p>
 
-<h3 id="insufficient-communications-between-cities">Insufficient communications between cities</h3>
+<h3 id="scope-creep">Scope creep</h3>
 
-<p>Civil servants rarely engage with peers (adjacent municipalities or ones that have key commonalities). By discussing mutual challenges, you might find existing solutions, receive recommendations, or glean best practices.</p>
+<p>Development can go over time and over budget if teams include too many features and do not effectively address the core problem statement.</p>
+
+<h3 id="over-specification">Over-specification</h3>
+
+<p>Creating highly detailed plans for the full development process (in terms of feature specifications and process) can make it challenging to address problems that arise, and stifle the development of unexpected and superior solutions.</p>
+
+<h3 id="lack-of-communication-and-collaboration">Lack of communication and collaboration</h3>
+
+<p>Not involving technical experts in the overall project plan, or not giving them enough autonomy to scope and plan sprints can foster poor working relationships or result in poor-quality outcomes.</p>
 
 <h2 id="checklist">Checklist</h2>
 
 <ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Internal and external benchmarks</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Market analysis and report (including a list of available software, vendors, and business models)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Agile development pre-plan</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Resource plan</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Software evaluation framework</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Clear allocation of staff responsibilities</li>
 </ul>
 
 <h2 id="references">References</h2>
 
-<p>Building and Buying Custom Software Guide</p>
+<p>Monday: Agile Planning Step-by-Step-Guide</p>
 
-<p><a href="https://code.gov/agency-compliance/compliance/procurement">https://code.gov/agency-compliance/compliance/procurement</a></p>
+<p><a href="https://monday.com/blog/project-management/agile-planning/">https://monday.com/blog/project-management/agile-planning/</a></p>
 
-<p>Fullstack Labs: Software Development Price Guide and Hourly Rate Comparison</p>
+<p>Why working with an agile approach matters across the globe</p>
 
-<p><a href="https://www.fullstacklabs.co/blog/software-development-price-guide-hourly-rate-comparison">https://www.fullstacklabs.co/blog/software-development-price-guide-hourly-rate-comparison</a></p>
+<p><a href="https://gds.blog.gov.uk/2022/05/13/why-working-with-an-agile-approach-matters-across-the-globe/">https://gds.blog.gov.uk/2022/05/13/why-working-with-an-agile-approach-matters-across-the-globe/</a></p>
 
-<p>Methods of Market Engagement</p>
+<p>Agile development</p>
 
-<p><a href="https://medium.com/citymartinsights/unit-3-choosing-your-procurement-path-8e1b711d0268">https://medium.com/citymartinsights/unit-3-choosing-your-procurement-path-8e1b711d0268</a></p>
+<p><a href="https://agile.18f.gov">https://agile.18f.gov</a></p>
 
-<p>Networked Improvement Community</p>
+<p>Project management (with evaluation metrics)</p>
 
-<p><a href="https://www.carnegiefoundation.org/blog/why-a-nic/">https://www.carnegiefoundation.org/blog/why-a-nic/</a></p>
+<p><a href="https://www.atlassian.com/agile/project-management/metrics">https://www.atlassian.com/agile/project-management/metrics</a></p>
 
-<p>CityMart Market Research Worksheet</p>
+<p>18F: Budgeting and overseeing tech projects</p>
 
-<p><a href="https://docs.google.com/document/d/1TqDwLfeu0GuFbAos5hBtV-0fJTgXnANv4i4Iqt7Zrcs/edit?usp=sharing">https://docs.google.com/document/d/1TqDwLfeu0GuFbAos5hBtV-0fJTgXnANv4i4Iqt7Zrcs/edit?usp=sharing</a></p>
+<p><a href="https://derisking-guide.18f.gov/state-field-guide/budgeting-tech/">https://derisking-guide.18f.gov/state-field-guide/budgeting-tech/</a></p>
 
-<p>Boston Sample RFI</p>
+<p>IT Product Management Integrated planning guide</p>
 
-<p><a href="https://drive.google.com/file/d/1GJUo6kR9zWmxF4835kHvSq0Rq7QuMLI-/view?usp=sharing">https://drive.google.com/file/d/1GJUo6kR9zWmxF4835kHvSq0Rq7QuMLI-/view?usp=sharing</a></p>
+<p><a href="https://sara-sabr.github.io/ITStrategy/2021/10/15/product-management-part-2.html">https://sara-sabr.github.io/ITStrategy/2021/10/15/product-management-part-2.html</a></p>
+
+<p>CDS Product Evaluation Guide</p>
+
+<p><a href="https://web.archive.org/web/20211013211805/https%3A//digital.canada.ca/tools-and-resources/evaluation-framework/">https://digital.canada.ca/tools-and-resources/evaluation-framework/</a></p>
+
+<p>Open North: Open and ethical procurement guide on engaging with the private sector</p>
+
+<p><a href="https://opennorth.ca/publications/2hvkzrlujufylsvxgf7li5_en">https://opennorth.ca/publications/2hvkzrlujufylsvxgf7li5_en</a></p>
+
+<p>18F: Work with the vendor</p>
+
+<p><a href="https://product-guide.18f.gov/partners/vendor/">https://product-guide.18f.gov/partners/vendor/</a></p>
+
+<p>Agile Development 101</p>
+
+<p><a href="https://www.agilealliance.org/agile101/">https://www.agilealliance.org/agile101/</a></p>
 
   </article>
 </section>
@@ -356,7 +372,7 @@
       </p>
       <p>
         
-        <a href="/LICENSE.html" rel="license">
+        <a href="/process-code-software-procurement/LICENSE.html" rel="license">
         Creative Commons Zero v1.0 Universal
         </a>
       </p>
