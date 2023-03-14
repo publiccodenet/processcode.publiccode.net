@@ -41,10 +41,12 @@ URL_IGNORE_REGEXES="\
 # ignoring problem urls (see above)
 # set an extra long timout for test-servers with poor connectivity
 # ignore request rate limit errors (HTTP 429)
+# deal with baseurl
 # using the files in Jekylls build folder
 bundle exec htmlproofer \
     --assume-extension \
     --url-ignore $URL_IGNORE_REGEXES \
     --typhoeus-config '{"timeout":60,"ssl_verifypeer":false,"ssl_verifyhost":"0"}' \
     --http_status_ignore "429" \
+    --url-swap '^/process-code-software-procurement[/]*:/' \
     ./_site
